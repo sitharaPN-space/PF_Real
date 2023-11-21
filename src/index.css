@@ -116,6 +116,47 @@
   }
 }
 
+@keyframes typewriter {
+  0%,
+  100% {
+    width: 0;
+  }
+  20%,
+  80% {
+    width: 10.2em;
+  }
+}
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.typeWriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter;
+  display: inline-block;
+  position: relative;
+  animation-duration: 8s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+
+.typeWriter::after {
+  content: "*";
+  color: #5ce1e6;
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
 .feature-card:hover {
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
