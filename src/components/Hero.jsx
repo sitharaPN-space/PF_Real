@@ -41,6 +41,7 @@ const Hero = () => (
 
     <div className={`w-[450px]`}>
       <HeroBgAnimation />
+      <div className="absolute z-[0] w-[40%] h-[35%] top-60 pink__gradient" />
     </div>
   </section>
 );

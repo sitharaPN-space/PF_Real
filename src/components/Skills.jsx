@@ -9,12 +9,12 @@ const Skills = () => (
     <div
       className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6`}
     >
-      <div>
+      <div className="text-center">
         <h1 className="flex-1 font-poppins font-semibold ss:text-[48px] text-[48px] text-white">
           Skills
         </h1>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Some of the technologies availalbe in the toolbox
+        <p className={`${styles.paragraph} max-w-[570px] mt-5`}>
+          Some of the technologies which I have been working on...
         </p>
       </div>
     </div>

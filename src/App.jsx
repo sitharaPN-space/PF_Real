@@ -1,6 +1,6 @@
 import React from "react";
 import { Hero, Navbar } from "./components";
-import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 import styles from "./styles";
 
 const App = () => {
@@ -20,13 +20,13 @@ const App = () => {
 
       <div className={`bg-primary ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          <Skills />
+          <Experience />
         </div>
       </div>
 
       <div className={`bg-primary ${styles.paddingX} {${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          Skills Experience Projects Education Contact me
+          Projects Education Contact me
         </div>
       </div>
     </div>
